@@ -46,7 +46,7 @@
 
                 </div>
                 <div>
-                    <h1> Coba Deployer Apps </h1>
+                    <h1> Coba Deployer Apps Update</h1>
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
