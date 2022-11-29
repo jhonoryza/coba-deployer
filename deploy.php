@@ -30,7 +30,7 @@ add('shared_dirs', ['public/images', 'storage']);
 // Writable dirs by web server
 add('writable_dirs', []);
 
-set('keep_releases', 2);
+// set('keep_releases', 2);
 
 // Hosts
 host('production')
