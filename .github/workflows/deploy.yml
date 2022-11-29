@@ -18,10 +18,8 @@ jobs:
             coverage: none
       - name: Install Composer dependencies
         run: composer update
-      - name: Setup SSH
-        uses: kielabokkie/ssh-key-and-known-hosts-action@v1.2.0
+      - name: Deploy
+        uses: deployphp/action@v1
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-host: ${{ secrets.SSH_HOST }}
-      - name: Deploy Environment
-        run: ./vendor/bin/dep deploy production
+          private-key: ${{ secrets.SSH_SECRET_KEY }}
+          dep: deploy production -v
